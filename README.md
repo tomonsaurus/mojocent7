@@ -1,6 +1,6 @@
-= mojolicious test環境構築 =
+# mojolicious test環境構築 #
 
-== 以下環境を作るvagrant設定 ==
+## 以下環境を作るvagrant設定 ##
 
  * CentOS7
  * perlbrew
@@ -8,7 +8,7 @@
  * Perl 5.20.3
  * mojolicious
 
-== 備考 ==
+## 備考 
 
  * C:\Users\****\.vagrant.d\boxes\centos-VAGRANTSLASH-7\******\virtualbox
 Vagrantfile
