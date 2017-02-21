@@ -18,6 +18,15 @@ Vagrantfile
  * mojoliciousはperl5.20以上だと、同梱ライブラリで動作するとのことなので
 5.20.3を選択している。
 
+ * テストアプリ
+```
+cd ~
+mkdir ~/mojo_welcome; cd ~/mojo_welcome
+mojo generate lite_app
+morbo myapp.pl
+```
 
+  WEBブラウザで以下にアクセス。
+  http://192.168.33.20:3000
 
 
