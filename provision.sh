@@ -37,18 +37,24 @@ cd ~
 
 export PERLBREW_ROOT=$HOME/.perlbrew
 
-curl -L http://xrl.us/perlbrewinstall --insecure | bash
+#if [[ ! -d $HOME/.perlbrew ]]; then
+
+  curl -L http://xrl.us/perlbrewinstall --insecure | bash
 
 
-~/.perlbrew/bin/perlbrew init
-echo 'source ~/.perlbrew/etc/bashrc' >> ~/.bashrc
-source ~/.bashrc
+  ~/.perlbrew/bin/perlbrew init
+  echo 'source ~/.perlbrew/etc/bashrc' >> ~/.bashrc
+  source ~/.bashrc
+#fi
+
+
+
 
 perlbrew install -v $PERL_INSTALL_VERSION -D ccflags=-fPIC
 
 perlbrew list
 
-perlbrew switch $PERL_INSTALL_VERSION]
+perlbrew switch $PERL_INSTALL_VERSION
 
 perlbrew   install-cpanm    
 
